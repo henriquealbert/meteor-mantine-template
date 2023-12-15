@@ -1,4 +1,4 @@
-import "@mantine/core/esm/index.css";
+import "@mantine/core/styles.css";
 
 import { localStorageColorSchemeManager, MantineProvider } from "@mantine/core";
 
