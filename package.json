@@ -1,0 +1,80 @@
+{
+  "name": "meteor-saas-template",
+  "private": true,
+  "scripts": {
+    "dev": "meteor --exclude-archs web.browser.legacy,web.cordova",
+    "test": "meteor test --once --driver-package meteortesting:mocha",
+    "test-app": "TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
+    "visualize": "meteor --production --extra-packages bundle-visualizer",
+    "npm-latest": "ncu --interactive --format group"
+  },
+  "dependencies": {
+    "@babel/core": "^7.23.6",
+    "@babel/plugin-transform-react-jsx": "^7.23.4",
+    "@babel/runtime": "^7.23.6",
+    "@mantine/carousel": "^7.3.2",
+    "@mantine/code-highlight": "^7.3.2",
+    "@mantine/core": "^7.3.2",
+    "@mantine/dates": "^7.3.2",
+    "@mantine/dropzone": "^7.3.2",
+    "@mantine/form": "^7.3.2",
+    "@mantine/hooks": "^7.3.2",
+    "@mantine/modals": "^7.3.2",
+    "@mantine/notifications": "^7.3.2",
+    "@mantine/nprogress": "^7.3.2",
+    "@mantine/spotlight": "^7.3.2",
+    "@mantine/tiptap": "^7.3.2",
+    "@tabler/icons-react": "^2.44.0",
+    "@tanstack/react-query": "^5.14.0",
+    "@tiptap/extension-link": "^2.1.13",
+    "@tiptap/react": "^2.1.13",
+    "@tiptap/starter-kit": "^2.1.13",
+    "clsx": "^2.0.0",
+    "dayjs": "^1.11.10",
+    "embla-carousel-react": "^8.0.0-rc15",
+    "meteor-node-stubs": "^1.2.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.21.0"
+  },
+  "devDependencies": {
+    "@tanstack/eslint-plugin-query": "^5.12.1",
+    "@types/meteor": "^2.9.7",
+    "@types/mocha": "^8.2.3",
+    "@types/node": "^18.13.0",
+    "@types/react": "^18.2.45",
+    "@types/react-dom": "^18.2.17",
+    "@typescript-eslint/eslint-plugin": "^6.14.0",
+    "@typescript-eslint/parser": "^6.14.0",
+    "eslint": "^8.55.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "npm-check-updates": "^16.14.12",
+    "postcss": "^8.4.32",
+    "postcss-load-config": "^5.0.2",
+    "postcss-loader": "^7.3.3",
+    "postcss-preset-mantine": "^1.11.1",
+    "postcss-simple-vars": "^7.0.1",
+    "prettier": "^3.1.1",
+    "typescript": "^4.9.4"
+  },
+  "meteor": {
+    "mainModule": {
+      "client": "ui/main.tsx",
+      "server": "api/main.ts"
+    },
+    "testModule": "tests/main.ts"
+  },
+  "babel": {
+    "plugins": [
+      [
+        "@babel/plugin-transform-react-jsx",
+        {
+          "runtime": "automatic"
+        }
+      ]
+    ]
+  }
+}
