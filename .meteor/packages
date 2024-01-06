@@ -23,4 +23,4 @@ react-meteor-data       # React higher-order component for reactively tracking M
 zodern:types            # Pull in type declarations from other Meteor packages
 hschmaiske:meteor-settings-validator
 accounts-password@3.0.0-beta300.0
-hschmaiske:create-typed-collection
+hschmaiske:create-typed-collection@0.0.4
