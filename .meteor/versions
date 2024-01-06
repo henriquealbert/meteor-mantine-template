@@ -32,6 +32,7 @@ fetch@0.1.4-beta300.0
 geojson-utils@1.0.12-beta300.0
 hot-code-push@1.0.5-beta300.0
 hot-module-replacement@0.5.4-beta300.0
+hschmaiske:create-typed-collection@0.0.1
 hschmaiske:meteor-settings-validator@0.0.1
 html-tools@2.0.0-alpha300.17
 htmljs@2.0.0-alpha300.17
