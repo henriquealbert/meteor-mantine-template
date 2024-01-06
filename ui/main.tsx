@@ -1,10 +1,7 @@
 import { Meteor } from "meteor/meteor";
-import { Suspense } from "react";
 import { createRoot } from "react-dom/client";
 
-import { Loading } from "/ui/common/components/loading";
-import { Routes } from "/ui/routes";
-import { UIProvider } from "/ui/styles/ui-provider";
+import App from "/ui/App";
 
 /**
  * This is the client-side entry point
@@ -15,11 +12,5 @@ Meteor.startup(() => {
   if (!container) throw new Error("app not found");
   const root = createRoot(container);
 
-  root.render(
-    <UIProvider>
-      <Suspense fallback={<Loading />}>
-        <Routes />
-      </Suspense>
-    </UIProvider>
-  );
+  root.render(<App />);
 });
